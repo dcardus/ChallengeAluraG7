@@ -1,0 +1,164 @@
+:root {
+    --color_blanco: #f3f5fc;
+    --color_azuloscuro: #031d44;
+    --color_azulclaro: #87b6a7;
+    --color_verde: #05b327;
+    --color_info: #495057;
+    --color_rojo: #F15946;
+    --color_copiar: #FCF5C7;
+
+}
+
+*{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 150%;
+}
+
+.logo-alura{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+
+.principal {
+    display: flex;
+    align-content: center;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.texto-ingreso{
+    border: none;
+    color: var(--color_azuloscuro);
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+::placeholder { color: var(--color_azuloscuro);}
+    .texto-ingreso:focus {
+        outline: none;
+    }
+
+.texto-salida{
+    background-image: url(./img/lupa.jpg);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: var(--color_azuloscuro);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+.texto-salida:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+    
+}
+
+.bt-Encriptar {
+    background-color: var(--color_azuloscuro);
+    border: 1px solid var(--color_azuloscuro);
+    border-radius: 24px;
+    color: var(--color_blanco);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+.bt-Encriptar:hover {
+    background-color: var(--color_rojo);
+}
+
+.bt-Desencriptar {
+    background: var(--color_info);
+    border: 1px solid var(--color_azuloscuro);
+    border-radius: 24px;
+    color: var(--color_blanco);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+.bt-Desencriptar:hover {
+    background-color: var(--color_verde);
+}
+
+.bt-Copiar {
+    border: 1px solid var(--color_azuloscuro);
+    border-radius: 24px;
+    color: var(--color_azuloscuro);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+}
+.bt-Copiar:hover {
+    background-color: var(--color_azulclaro);
+}
+
+.info {
+    
+    color: var(--color_info);
+    font-size: 1rem;
+}
+
+.presentacion__enlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    
+}
+
+.presentacion__enlaces__link{
+      /* background-color: #22D4FD; */
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      border: 2px solid #22D4FD;
+      width: 50%;
+      text-align: center;
+      border-radius: 15px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 23px;
+      text-decoration: none;
+      color: #F6F6F6;
+      font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.presentacion__enlaces__link:hover{
+    background-color: #272727;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+
+    .principal {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .txtUsuario {
+        width: auto;
+    }
+}
